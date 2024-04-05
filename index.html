@@ -10,6 +10,8 @@
     <div class="container">
         <h1>Ficha de Produção Diária</h1>
         <form id="productionForm">
+
+            <!-- Campos do formulário -->
             <div class="form-group">
                 <label for="day">Dia:</label>
                 <input type="date" id="day" name="day" required>
@@ -38,6 +40,28 @@
         </form>
     </div>
 
+        <!-- Adicionar o snippet de configuração do Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script> 
+
+     <!-- Inicializar o Firebase e incluir o script.js -->
+    <script>
+        // Configuração do Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyCItHt_pWh1o8wxIMFbf1sUTF5pTypZDpw",
+            authDomain: "sistema-biobraga1.firebaseapp.com",
+            databaseURL:  "https://sistema-biobraga1-default-rtdb.firebaseio.com",
+            projectId: "sistema-biobraga1",
+            storageBucket: "sistema-biobraga1.appspot.com",
+            messagingSenderId: "1081040891197",
+            appId: "1:1081040891197:web:d3468c42879932f7e52954",
+            measurementId: "G-77GZT2F5PK"
+        };
+        
+        // Inicializar o Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
